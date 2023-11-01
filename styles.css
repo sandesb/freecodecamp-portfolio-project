@@ -1,0 +1,257 @@
+html{
+    margin:0;
+}
+
+/* Reset some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: helvetica;
+    margin: 0;
+}
+a{
+    color: rgb(5,25,25);
+}
+h1{
+    color: rgb(125,205,255);
+    
+}
+
+
+/* Set the height of the welcome section to 100vh (viewport height) */
+#welcome-section {
+    height: 100vh;
+    text-align: center;
+  
+background: radial-gradient(circle at 48.7% 44.3%, rgb(56, 113, 209) 0%, rgb(56, 113, 209) 22.9%, rgb(8, 76, 140) 76.7%, rgb(31, 63, 116) 100.2%);
+
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Style the navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#36454f;
+    padding: 10px;
+    border-radius: 0 20px 100px; 
+        z-index:99;
+
+}
+
+#navbar ul {
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style project tiles */
+.project-tile {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+     color: rgb(5,25,25);
+     width:50%;
+}
+
+.project-link {
+    background-color:linear-gradient(to bottom, #33ccff 0%, #66ccff 100%);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+    /* Example: Adjust styling for smaller screens */
+    #navbar ul {
+        text-align: center;
+    }
+
+    #navbar li {
+        display: block;
+        margin-bottom: 10px;
+        z-index:99;
+    }
+
+    .project-tile {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .container {
+  max-width: 200px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  position: relative;
+}
+#projects{
+    display:flex;
+    flex-wrap: wrap;
+}
+iframe{
+    width: 95%;
+    height: 75%;
+}
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.intro {
+  position: relative;
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+  background: transparent url(https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/397603023_122116216376057680_7855143114568264514_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MQ6kjWySb0sAX8otnRS&_nc_ht=scontent.fktm3-1.fna&oh=00_AfAaxJIU2g8x-11Y5pLrkqfxT2b6Z2mepfxS79se-Ahhnw&oe=6545C084) center no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  transition: all .72s ease-in-out;
+}
+
+.intro:after {
+  content: '';
+  display: block;
+  position: absolute;
+  /* width: 100%; */
+  height: 500px;
+  right: -100%;
+  left: 0;
+  transform: skew(100deg);
+  background: #fff;
+  bottom: -70%;
+  box-shadow: inset 1px 0px 5px 0px rgba(204, 204, 204, 0.72);
+}
+
+.container:after {
+  content: '';
+  max-width: 300px;
+  width: 100%;
+  margin: 0% auto 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top:0;
+  right: 0;
+  box-shadow: 0px 5px 5px 0px rgba(204, 204, 204, 0.72);
+  z-index: -1;
+  transition: all .52s ease-in-out;
+}
+
+.meta {
+  max-width: 300px;
+  width: 100%;
+  margin: 0% auto 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 110px;
+  overflow: hidden;
+  
+  transition: all .52s ease-in-out;
+}
+
+.meta__inner {
+  padding: .25rem 1rem;
+  line-height: 1.5rem;
+  position: relative;  
+  background: #fff;
+  z-index: 15;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.meta:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 80px;
+  max-width: 300px;
+  height: 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  transform: rotate(90deg) skew(10deg);
+  z-index: 4;
+}
+h2{
+    color: rgb(56, 113, 209);
+}
+
+h3 {
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: rgb(75,75,75);
+  text-decoration: underline;
+    padding-left: .72rem;  
+}
+
+p {
+  font-family: helvetica,serif;
+  font-size: .85rem;
+  font-weight: inherit;
+  color: #555;
+  text-align: justify;
+}
+
+p a {
+     color: rgb(75,75,75);
+
+  text-decoration: none;
+  opacity: .72;
+  
+  transition: all .27s ease-in-out;
+}
+
+p a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.container:hover .meta{
+  transform: translateY(5px);
+}
+
+.container:hover .intro {
+  transform: translateY(-5px);
+}
+
+.container:hover:after {
+  transform: translateY(5px);
+}
+
+#projects{
+    display:flex;
+}
+iframe{
+  width: 100%;
+
+}
+
